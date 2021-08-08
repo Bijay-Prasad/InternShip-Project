@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Web Development Tutorial: Learn Web Development in Easy Way</title>
+    <style>
+        .head {
+            padding: 10px 1px;
+            background-color: rgb(142, 255, 142);
+            border: 1px double rgb(0, 0, 0);
+            border-radius: 15px;
+        }
+
+        .navi {
+            font-family: sans-serif;
+            list-style: none;
+            display: inline;
+            padding: 0px 2px;
+            background-color: rgb(214, 255, 161);
+            border: 1px double rgb(0, 0, 0);
+            border-radius: 15px;
+        }
+
+        .box {
+            background-color: rgb(174, 0, 255);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-style: italic;
+            color: rgb(255, 255, 255);
+        }
+        .maa {
+            color: red;
+        }
+        .box1 {
+            background: #fffafa url("img3.svg") no-repeat center fixed;
+            color: rgb(255, 0, 0);
+            padding: 10px 10px;
+        }
+
+        .box2 {
+            background-color: rgb(194, 62, 255);
+            padding: 0px 10px;
+            border-radius: 15px;
+        }
+
+        .box3 {
+            background: #ffffff url("img2a.jpg") no-repeat center fixed;
+            color: indigo;
+        }
+
+        .box4 {
+            background-color: rgb(255, 59, 255);
+            padding: 0px 20px;
+            border-radius: 15px;
+        }
+
+        .box5 {
+            background: #1a1a1a url("backhtml.jpg") no-repeat center fixed;
+            padding-left: 50px;
+            position: relative;
+            animation: yourmove 5s infinite;
+        }
+
+        .box6 {
+            background: #adadad url("backcss.jpg") no-repeat center fixed;
+            padding-left: 40px;
+            position: relative;
+            animation: yourmove1 5s infinite;
+        }
+
+        .box7 {
+            background: #ffffff url("js1.jpg") no-repeat center fixed;
+            padding-left: 30px;
+            position: relative;
+            animation: yourmove2 5s infinite;
+        }
+
+        .box8 {
+            background: #33a2ce url("backphp.jpg") no-repeat center fixed;
+            padding: 20px;
+            position: relative;
+            animation: yourmove3 5s infinite;
+        }
+        @keyframes yourmove {
+            0% {
+                top: 0px;
+                right: 0px;
+            }
+
+            25% {
+                top: 0px;
+                right: 50px;
+            }
+
+            50% {
+                top: 50px;
+                right: 50px;
+            }
+
+            75% {
+                top: 50px;
+                right: 0px;
+            }
+
+            100% {
+                top: 0px;
+                right: 0px;
+            }
+        }
+        @keyframes yourmove1 {
+            0% {
+                top: 0px;
+                right: 0px;
+            }
+
+            25% {
+                top: 0px;
+                right: 60px;
+            }
+
+            50% {
+                top: 60px;
+                right: 60px;
+            }
+
+            75% {
+                top: 60px;
+                right: 0px;
+            }
+
+            100% {
+                top: 0px;
+                right: 0px;
+            }
+        }
+        @keyframes yourmove2 {
+            0% {
+                top: 0px;
+                right: 0px;
+            }
+
+            25% {
+                top: 0px;
+                right: 70px;
+            }
+
+            50% {
+                top: 70px;
+                right: 70px;
+            }
+
+            75% {
+                top: 70px;
+                right: 0px;
+            }
+
+            100% {
+                top: 0px;
+                right: 0px;
+            }
+        }
+        @keyframes yourmove3 {
+            0% {
+                top: 0px;
+                right: 0px;
+            }
+
+            25% {
+                top: 0px;
+                right: 80px;
+            }
+
+            50% {
+                top: 80px;
+                right: 80px;
+            }
+
+            75% {
+                top: 80px;
+                right: 0px;
+            }
+
+            100% {
+                top: 0px;
+                right: 0px;
+            }
+        }
+        .box9 {
+            background-color: rgb(255, 164, 255);
+            padding: 0px 20px;
+            border-radius: 15px;
+        }
+
+        .box10 {
+            padding: 5px 5px;
+        }
+
+        .box11 {
+            background-color: rgb(255, 203, 255);
+            padding: 0px 20px;
+            border-radius: 15px;
+        }
+
+        .box12 {
+            padding: 20px 20px;
+        }
+
+        .box13 {
+            padding: 20px 10px;
+        }
+
+        .box14 {
+            padding: 20px 10px;
+        }
+
+        .about {
+            background-color: rgb(255, 59, 255);
+            padding: 0px 20px;
+            border-radius: 15px;
+        }
+
+        input[type=text],
+        select {
+            width: 100%;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=reset] {
+            width: 100%;
+            background-color: #afafaf;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=reset]:hover {
+            background-color: #ff0000;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #ff00ff;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        table {
+            background-color: blanchedalmond;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            font-size: 10px;
+            text-align: left;
+            padding: 8px;
+        }
+
+        .contact {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+
+        .CopyrightText {
+            width: 100%;
+            background: #181818;
+            text-align: center;
+            color: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="head">
+                <li class="navi"> <img src="logo.png" alt="logo" height="15px" width="15px"><b>Web Development Tutorial</b></li>
+                <li class="navi"> <a href="#local1"><b>Home</b></a> </li>
+                <li class="navi"> <a href="#local2"><b>Videos</b></a> </li>
+                <li class="navi"> <a href="#local3"><b>About </b></a></li>
+                <li class="navi"> <a href="#local4"><b>Contact us </b></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="box">
+        <h4 class="home" id="local1" ><b><i><u>Web Development Tutorial</u></i></b></h4>
+    </div>
+    <div class="box1">
+        <p class="maa">
+         <b><u>Web development</u> is the work involved in developing a Web site for the Internet (Word
+            Wide Web) oran intranet (a private network). Web development can range from developing a simple single static
+            page of plain text to complex web applications, electronic businesses, and social network services. A more
+            comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web
+            design, Web content development, client liaison, client-side/server-side scripting, Web server and
+            network security configuration, and e-commerce development.</b></p>
+    </div>
+    <div class="box2">
+        <h5><b>Below are the major benefits of website development and web design:-</b></h5>
+    </div>
+    <div class="box3">
+        <ol>
+            <li><b>Makes navigation easy.</b></li>
+            <li><b>Get to win with SEO. </b></li>
+            <li><b>Provide visual content on the website. </b></li>
+            <li><b>Increase the sales.</b></li>
+            <li><b>Attract lifetime clients to your business.</b></li>
+            <li><b>Reach out to more clients.</b></li>
+            <li><b>Improving user engagement.</b></li>
+            <li><b>Resourceful in marketing and advertising.</b></li>
+            <a href="https://www.dotcominfoway.com/blog/web-design-and-development-guide/#gref" target="_blank">more</a>
+        </ol>
+    </div>
+    <div class="box4">
+        <h5><b>Most Popular Courses:-</b></h5>
+    </div>
+    <div class="box5"> <img src="htmlnew2.png" alt="HTML Course" width="100px"> </div><br>
+    <div class="box6"> <img src="cssnew.png" alt="CSS Course" width="100px"> </div><br>
+    <div class="box7"> <img src="java.png" alt="JavaScript Course" width="100px"> </div><br>
+    <div class="box8"> <img src="phpnew.png" alt="PHP Course" width="100px"> </div>
+    </div>
+    <br><br><br><br>
+    <div class="box9">
+        <h5><b>Other Pupular Courses:-</b></h5>
+    </div>
+    <div class="box10">
+        <img src="lang.svg" alt="other languages">
+    </div>
+    <div class="box11" id="local2" >
+        <h5><b>Tutorial Videos:-</b></h5>
+    </div>
+    <div class="box12">
+        <iframe width="150" height="100" src="https://www.youtube.com/embed/FfxTkIsaTYk" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <div class="box13">
+        <iframe width="150" height="100" src="https://www.youtube.com/embed/gT0Lh1eYk78" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <div class="box4" id="local3" >
+        <h5><b>About:-</b></h5>
+    </div>
+    <table>
+        <tr>
+            <th>NAME:</th>
+            <td><b>Bijay Prasad.</b></td>
+        </tr>
+        <tr>
+            <th>EMAIL ID:</th>
+            <td><b>bijaylife2001</b></td>
+        </tr>
+        <tr>
+            <th>PHONE NO.:</th>
+            <td><b>+91 6290280241</b></td>
+        </tr>
+    </table>
+    <div class="box4" id="local4" >
+        <h5><b>Contact Us:-</b></h5>
+    </div>
+    <div class="contact">
+        <form action="#" name="StudentRegistration" onSubmit="return(validate());">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+            <label for="lname">Email</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">SELECT</option>
+                <option value="australia">AUSTRALIA</option>
+                <option value="canada">CANADA</option>
+                <option value="usa">INDIA</option>
+                <option value="usa">USA</option>
+            </select>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="CopyrightText">
+        <p>Copyright © 2021 Web Development Tutorial. All Rights Reserved.</p>
+    </div>
+</body>
+
+</html>
